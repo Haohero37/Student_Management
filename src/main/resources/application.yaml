@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Student_Manager_API
+  profiles:
+    active: dev
+    include: common
