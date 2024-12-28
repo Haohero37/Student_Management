@@ -1,0 +1,20 @@
+spring:
+  main:
+    allow-circular-references: true
+
+  datasource:
+      url: jdbc:postgresql://localhost:5432/student_manage
+      username: ${DB_USERNAME:postgres}
+      password: ${DB_PASSWORD:19082004}
+
+
+  mvc:
+    log-request-details: true
+
+logging:
+    level:
+      web: DEBUG
+      org:
+        springframework:
+          web: DEBUG
+        hibernate: ERROR
